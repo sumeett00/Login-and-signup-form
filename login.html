@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        
+      <link rel="stylesheet" href="style1.css">
+      
+     
+    
+      <title>Log-in Page</title>
+    </head>
+    <body>
+    
+      <div class="box">
+        <div class="header">
+          <i class="fas fa-user-circle fa-5x"></i>
+          <h1 class="header-text">Log-in</h1>
+        </div>
+    
+        <form class="login-Form" name="myform" action="#Sign Up.html" method="post" onsubmit="return validateform()">
+    
+            <div class="user-input">
+                <input type="Username" name="name" value="" placeholder="Username">
+              </div> 
+    
+          <div class="password-input">
+            <input type="password" name="password" value="" placeholder="Password">
+          </div>
+    
+          <div class="login-btn">
+            <button type="submit" name="button">Log-in</button>
+          </div>
+    
+        </form>
+    
+        <div class="choose">
+          <p>
+            Need an account? <a href="index.html">Sign-up here</a>
+          </p>
+         
+        </div>
+    
+    
+      </div>
+      <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }  
+        }  
+        </script>
+    </body>
+    </html>
